@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page1</title>
+    <style>
+        body, h1, h2, h3, p, ul, li, form, input {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.6;
+            background: #eceaea;
+            color: black;
+            padding: 20px;
+            text-align: justify;
+        }
+        header {
+            background: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        nav {
+            background: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav form {
+            margin-top: 10px;
+            text-align: center;
+        }
+        nav input[type="search"] {
+            padding: 5px;
+            width: 200px;
+        }
+        nav input[type="submit"] {
+            padding: 5px 10px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        nav input[type="submit"]:hover {
+            background: #333;
+        }
+        .leftcolumn {
+            background-color:white;
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .rightcolumn {
+            background-color:white;
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            float: right;
+            margin-left: 3%;
+        }
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 2990px; 
+            clear: both;
+        }
+       
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ARTIFICIAL INTELIGENCE</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="aihomepage.html">Home</a></li>
+        <li><a href="dia.html">AI in Medicine</a></li>
+        <li><a href="drug.html">Drug Discovery AI</a></li>
+        <li><a href="aipat.html">Patient Care AI</a></li>
+    </ul>
+
+    <form>
+        <input type="search" name="q" placeholder="Search query" />
+        <input type="submit" value="Go!" />
+    </form>
+</nav>
+
+<div class="leftcolumn">
+   
+    <center>
+       <h3>The Role of Artificial Intelligence (AI) in Modern Medicine</h3>
+        <br>
+        <img src="data:image/jpeg;base64,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">
+    </center>
+    <br><br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Artificial Intelligence (AI) is transforming healthcare with its applications in diagnostics, treatment planning, and personalized medicine. Here's a detailed exploration of how AI is revolutionizing the field and shaping the future of medical practice.</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Artificial Intelligence has significantly enhanced diagnostic capabilities in medicine, particularly in medical imaging. AI algorithms can analyze large datasets of medical images, such as X-rays, CT scans, MRIs, and mammograms, to detect patterns and anomalies that may be imperceptible to the human eye. This capability not only improves the accuracy and speed of diagnoses but also helps prioritize urgent cases for immediate attention.</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;For example, AI-powered systems like Google's DeepMind and IBM Watson have been deployed to assist radiologists in identifying abnormalities indicative of diseases like cancer or neurological disorders. These systems can highlight areas of concern on scans, reducing the likelihood of missed diagnoses and allowing clinicians to intervene earlier, potentially improving patient outcomes.</p>
+    <br>
+    <h3>Diagnostics</h3>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;AI excels in analyzing medical imaging and diagnostic tests, enhancing accuracy and speed in interpretation. For instance, AI algorithms can detect abnormalities in radiology scans (like X-rays, CT scans, and MRIs) with precision comparable to or even surpassing human experts. This capability expedites diagnosis, reduces errors, and ensures earlier intervention for patients.</p>
+    <br>
+    <h3>Treatment Planning</h3>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;In treatment planning, AI aids in developing personalized therapies based on individual patient data. By analyzing vast amounts of patient records, genetic information, and treatment outcomes, AI can recommend optimal treatment plans tailored to each patient’s unique profile. This approach, known as precision medicine, considers genetic variability and other factors to maximize treatment efficacy while minimizing adverse effects.</p>
+    <br>
+    <h3>Personalized Medicine</h3>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;AI plays a crucial role in advancing personalized medicine by predicting disease risks and outcomes based on genetic profiles and lifestyle data. For instance, AI algorithms can analyze genetic sequences to identify predispositions to certain diseases, allowing for proactive measures such as early screening or personalized preventive strategies.</p>
+    <br>
+    <h3>Examples of AI Applications</h3>
+    <br>
+    <ol>
+        <li><b>IBM Watson for Oncology:</b>&nbsp;Utilizes AI to suggest personalized treatment plans by analyzing vast amounts of medical literature, patient records, and clinical expertise.</li><br>
+        <li><b>Google DeepMind’s Streams:</b>&nbsp;Assists in detecting acute kidney injury by analyzing patient data and alerting clinicians in real-time, enabling timely interventions.<br></li><br>
+        <li><b>Path AI:</b>&nbsp;Enhances pathology diagnostics by leveraging AI to analyze tissue samples and detect cancerous cells with high accuracy, aiding pathologists in making more informed decisions.<br></li><br>
+        <li><b>Virtual Health Assistants:</b></li>&nbsp;Chatbot technologies powered by AI provide patient education, answer queries, and schedule appointments, improving patient engagement and healthcare accessibility.<br></li><br>
+    </ol>
+    <br>
+    <h3>AI in Treatment Planning</h3><br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;In treatment planning, AI facilitates the personalization of therapeutic approaches based on individual patient characteristics. By analyzing vast amounts of patient data, including medical records, genetic information, and treatment outcomes, AI can generate insights that guide clinicians in selecting the most effective treatments while minimizing risks and adverse effects.</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Precision medicine, enabled by AI, aims to tailor medical interventions to the genetic, environmental, and lifestyle factors of each patient. This approach not only optimizes treatment efficacy but also supports the development of targeted therapies for conditions ranging from cancer to chronic diseases like diabetes and cardiovascular disorders.
+
+    </p>
+    <br>
+    <h3>AI in Personalized Medicine</h3>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;AI plays a pivotal role in advancing personalized medicine by predicting disease risks and outcomes based on comprehensive patient profiles. Through sophisticated algorithms, AI can analyze genetic predispositions, biomarkers, and lifestyle data to stratify patient populations into subgroups with varying susceptibilities to diseases.</p>
+   
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;This proactive approach not only enhances patient care but also contributes to the optimization of healthcare resource allocation.</p>
+    <br>
+    <h3>Future Directions
+    </h3>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;The future of AI in medicine holds immense potential, driven by advancements in machine learning, natural language processing, and predictive analytics. Emerging technologies such as federated learning, which enables collaborative AI model training across healthcare institutions without compromising patient privacy, are poised to revolutionize data-driven healthcare delivery.</p>
+    
+   
+    <p>In conclusion, Artificial Intelligence is reshaping the landscape of modern medicine by augmenting diagnostic accuracy and fostering proactive healthcare interventions. As AI continues to evolve, enabling personalized treatment strategies its integration into clinical practice promises to enhance patient outcomes, drive healthcare innovation, continues ultimately improve the quality of life for individuals worldwide.</p>
+</div>
+
+<div class="rightcolumn">
+    <ul>
+    <li><p>Introduction</p><br></li>
+    <li><p>Personalized Medicine</p><br></li>
+    <li><p>Drug Discovery and Development</p><br></li>
+    <li><p>Impact on Patient Care and Outcomes</p><br></li>
+    <li><p>Ethical Considerations and Future Directions</p><br></li>
+    <li><p>Efficiency and Cost Reduction</p><br></li>
+    <li><p>Clinical Decision Support</p><br></li>
+    <li><p>Patient Engagement and Education</p><br></li>
+    <li><p>Continuous Learning and Improvement</p><br></li>
+    <li><p>Operational Improvements</p><br></li>
+    <li><p>Patient Engagement and Education</p><br></li>
+    <li><p>Enhanced Diagnostic Accuracy</p><br></li>
+    <li><p>AI's Transformative Impact on Modern Healthcare</p><br></li>
+    <li><p>Clinical Decision Support</p><br></li>
+    <li><p>Continuous Learning and Improvement</p><br></li>
+    <li><p>Ethical Considerations and Future Directions</p><br></li>
+    <li><p>The Role of Artificial Intelligence in Modern Medicine</p><br></li>
+    <li><p>AI in Drug Discovery and Development</p><br></li>
+    <li><p>Impact of AI on Patient Care and Outcomes</p><br></li>
+   
+    <li><p>Clinical Decision Support</p><br></li>
+    <li><p>Patient Engagement and Education</p><br></li>
+    <li><p>Continuous Learning and Improvement</p><br></li>
+    <li><p>Operational Improvements</p><br></li>
+    <li><p>AI's Transformative Impact on Modern Healthcare</p><br></li>
+    <li><p>Clinical Decision Support</p><br></li>
+    <li><p>Drug Discovery and Development</p><br></li>
+    <li><p>Impact on Patient Care and Outcomes</p><br></li>
+    <li><p>Ethical Considerations and Future Directions</p><br></li>
+    <li><p>Continuous Learning and Improvement</p><br></li>
+    <li><p>Operational Improvements</p><br></li>
+    <li><p>Patient Engagement and Education</p><br></li>
+    <li><p>Enhanced Diagnostic Accuracy</p><br></li>
+    <li><p>AI's Transformative Impact on Modern Healthcare</p><br></li>
+    <li><p>Clinical Decision Support</p><br></li>
+    <li><p>Continuous Learning and Improvement</p><br></li>
+    <li><p>Personalized Medicine</p><br></li>
+    <li><p>Examples of AI Applications</p><br></li>
+    <li><p>AI in Treatment Planning</p><br></li>
+    <li><p>Future Directions</p><br></li>
+    <li><p>Diagnostics</p><br></li>
+    <li><p>Treatment Planning</p><br></li>
+    <li><p>Conclusion</p><br></li>
+
+    </ul>
+   
+   <p></p><br>
+
+   
+</div>
+
+<footer>
+    <p>© Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
+
+</body>
+</html>
